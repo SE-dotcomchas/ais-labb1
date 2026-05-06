@@ -1,0 +1,49 @@
+<group name="local,sshd,">
+
+  <!-- Detektera 5 misslyckade SSH-inloggningar inom 2 minuter -->
+    <rule id="100001" level="10" frequency="5" timeframe="120">
+    <if_matched_sid>5710</if_matched_sid>
+    <description>SSH brute force-attack detekterad (5+ misslyckade försök)</description>
+    <mitre>
+      <id>T1110</id>
+    </mitre>
+    <group>authentication_failures,</group>
+  </rule>
+  <!-- Detektera lyckad inloggning efter misslyckade försök -->
+  <rule id="100002" level="12">
+  <if_sid>5715</if_sid>
+  <if_matched_sid>100001</if_matched_sid>
+  <description>Lyckad SSH-inloggning efter brute force — möjlig kompromiss</description>
+  <mitre>
+    <id>T1110</id>
+  </mitre>
+</rule>
+
+  <!-- Detektera inloggning från ovanligt land (kräver GeoIP) -->
+  <rule id="100003" level="8">
+    <if_sid>5715</if_sid>
+    <description>SSH-inloggning från extern IP — kontrollera källa</description>
+    <group>authentication_success,</group>
+  </rule>
+
+</group>
+
+
+
+
+
+<group name="local,ai_detection,">
+  <rule id="100010" level="10">
+    <decoded_as>json</decoded_as>
+    <field name="ai_detector">true</field>
+    <field name="severity">critical</field>
+    <description>AI-anomalidetektering: Kritisk avvikelse identifierad</description>
+  </rule>
+
+  <rule id="100011" level="8">
+    <decoded_as>json</decoded_as>
+    <field name="ai_detector">true</field>
+    <field name="severity">high</field>
+    <description>AI-anomalidetektering: Hög avvikelse identifierad</description>
+  </rule>
+</group>
