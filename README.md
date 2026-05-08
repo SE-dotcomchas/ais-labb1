@@ -62,3 +62,16 @@ Anomalidetekteringsrapport + Dashboard
 
 Här kan man attacken jag gjorde den 2 Maj, ovanför med hundratals detektioner tidigare dagar var när jag manuellt laddade test data på Wazuh för att kolla att själva dashboarden funkade. Man kan se totalt 200 händelser då den andra maj från en enda ip så då vet jag att det
 var jag som endast skapade attacken. Bilden ovan visar hur dashboarder ser ut med testdata för att visa att den funkar helt
+
+Wazuh Karta
+---------------
+
+<img width="829" height="830" alt="bc9cf3307179166aec1294124f037ab4" src="https://github.com/user-attachments/assets/15851c6c-da34-4344-9294-beab43635720" />
+
+Reflektion
+-------------
+Efter jag har användigt Wazuh så har jag nu insett att det är en extremt kraftfult verktyg för att se och upptäcka hot, Innan i kurs 2 så använde vi suricata för att samla in loggar och ser alerts, Wazuh lyckas visa allting på ett mycket bättre och klarare sätt
+så att man för en bättre bild över det hela, När man använde Suricata så var det bara en gigantisk text fil med larm medans i wazuh kan man filtrera datan för att visa tillexempel hur många misslyckade ssh försök händer dagligen, Dock programmet är stort och det krävs väldigt tid att configurera från nytt
+och att sen ha kunskapen att kunna skapa alla nya regler och att sätta upp FIM på alla viktiga mappar med känslig information. 
+
+Men när allt väl  är upsatt så är det ett extremt stark verkyg att ha tillgång till med tanke på att den kan se allt från filändringar, samlar in loggar från vad användare gör, massa med andra funktioner så är det ett av dom bästa verktygen att ha för att hitta hot i systemet eller att upptäcka när attacker händer
