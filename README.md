@@ -45,3 +45,19 @@ FIM, File integrity monitoring system configurerat för att övervaka vissa kän
 
 3 Egna skrivna regler som är tillagda i local_rules.xml
 ------------
+Rule 100001 Existerar för att detectera brute force attackar genom att den ränkar inloggs försök, Om det skulle uppstå med än 5 försök under 120 sekunder så triggas larmet då att det sker
+
+Rule 100002 Varnar för ett lyckat login vid en brute force attack så om man ser den triggad måste man snabbt agera för att hålla sin information hemlig
+
+Rule 100003 Denna regeln triggar oavsett var vid en SSH inloggning och att man måste manuellt kolla vart personen kommer ifrån
+
+
+Anomalidetekteringsrapport + Dashboard
+--------------------------
+
+
+<img width="2544" height="840" alt="936523b6e5ca674715792be9ccd49f2f" src="https://github.com/user-attachments/assets/0619b32a-038e-4025-ba98-9cc5c790a742" />
+<img width="996" height="746" alt="600f51c06fc98e4c5ff191694a9ee718" src="https://github.com/user-attachments/assets/51cfa4e4-0e17-4bc2-ac70-47b65363a148" />
+
+Här kan man attacken jag gjorde den 2 Maj, ovanför med hundratals detektioner tidigare dagar var när jag manuellt laddade test data på Wazuh för att kolla att själva dashboarden funkade. Man kan se totalt 200 händelser då den andra maj från en enda ip så då vet jag att det
+var jag som endast skapade attacken
