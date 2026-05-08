@@ -56,8 +56,9 @@ Anomalidetekteringsrapport + Dashboard
 --------------------------
 
 
-<img width="2544" height="840" alt="936523b6e5ca674715792be9ccd49f2f" src="https://github.com/user-attachments/assets/0619b32a-038e-4025-ba98-9cc5c790a742" />
+<img width="2538" height="836" alt="ddcec10f1e17e32ebae21c6147043ab6" src="https://github.com/user-attachments/assets/a29893d7-4196-4740-8341-d1aab64804b1" />
+
 <img width="996" height="746" alt="600f51c06fc98e4c5ff191694a9ee718" src="https://github.com/user-attachments/assets/51cfa4e4-0e17-4bc2-ac70-47b65363a148" />
 
 Här kan man attacken jag gjorde den 2 Maj, ovanför med hundratals detektioner tidigare dagar var när jag manuellt laddade test data på Wazuh för att kolla att själva dashboarden funkade. Man kan se totalt 200 händelser då den andra maj från en enda ip så då vet jag att det
-var jag som endast skapade attacken
+var jag som endast skapade attacken. Bilden ovan visar hur dashboarder ser ut med testdata för att visa att den funkar helt
