@@ -37,7 +37,6 @@ Denna regeln varnar för en brute force attack. Man bör reagera på det genom a
 Denna regeln visar att det är  någon som som försöker logga in men som inte gör ett försök och blir automatiskt kickad av inaktivitet. Det kan bara vara allt från en arbetare som går iväg från datorn till ett script som skannat och söker information
 
 FIM, File integrity monitoring system configurerat för att övervaka vissa känsliga filer
-
 -----------
 <img width="949" height="394" alt="2edc2b3db71c5b66bf48ffa771bd9380" src="https://github.com/user-attachments/assets/5ee3944c-861c-4468-9165-2bc4d885f330" />
 
